@@ -23,7 +23,7 @@ def search(restaurant_name):
 				print res_details['name'],'\n',res_details['location']['address'], '\nPrice for 2: ', res_details['average_cost_for_two'], ' Rs\nRating: ', res_details['user_rating']['aggregate_rating'] 
 				print "\n"
 				try:
-					fin.write(res_details['name'] + ","+ res_details['cuisines'] + "," + res_details['location']['locality'] + "," + str(res_details['average_cost_for_two']) + ","+ str(res_details['user_rating']['aggregate_rating'] + "\n")) 
+					fin.write(res_details['name'] + ","+ " ".join(res_details['cuisines'].split(',')) + "," + " ".join(res_details['location']['locality'].split(',')) + "," + str(res_details['average_cost_for_two']) + ","+ str(res_details['user_rating']['aggregate_rating'] + "\n")) 
 				except:
 					continue
 '''
