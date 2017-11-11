@@ -12,7 +12,7 @@ def search(restaurant_name):
 	if(not os.path.isfile('res_details.csv')):
 		os.system('touch res_details.csv')
 		with open('res_details.csv','w') as fin:
-			fin.write('Restaurant Name' + ","+  'Location' + ","+ 'Price for 2'+ ","+  'Rating' + "\n") 
+			fin.write('Restaurant Name' + ","+ 'Cuisines' + ","+'Location' + ","+ 'Price for 2'+ ","+  'Rating' + "\n") 
 
 	with open('res_details.csv','a') as fin:
 		for i in xrange(min(2,len(res_results))):
