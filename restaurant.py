@@ -1,7 +1,7 @@
 from pyzomato import Pyzomato
 import os, sys
 
-ZOMATO_API = '1805ac2da536bd40cdfc7e003dbaa421'
+ZOMATO_API = '<YOUR-API-CODE>'
 
 #Initialise Zomato API
 res_api = Pyzomato(ZOMATO_API)
